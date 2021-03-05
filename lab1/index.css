@@ -1,0 +1,168 @@
+#textin {
+    text-decoration: underline;
+    color: rgb(8, 37, 60);
+    font-size: larger;
+}
+
+body {
+    background-color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header {
+    background-image: url("images/1555138638_shapka-sayta-gory-137115242.jpg");
+}
+
+a {
+    color: #34495e;
+    line-height: 1.2;
+    position: relative;
+    padding: 0 14px;
+    text-transform: uppercase;
+}
+a:after {
+    content: "";
+    height: 100%;
+    min-width: 4px;
+    background: #34495e;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+}
+a:hover:after {
+    min-width: 100%;
+    background: #95a5a6;
+    opacity: .35;
+}
+
+hr {
+    border: 2px solid gray;
+    margin-bottom: 25px;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    border: 15px solid #ffffff;
+    border-top: 5px solid #ffffff;
+    border-collapse: collapse;
+}
+table th {
+    font-weight: bold;
+    padding: 5px;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 5px solid #ffffff;
+}
+table td {
+    background-color: lightsteelblue;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-bottom: 5px solid #ffffff;
+}
+
+.main_title {
+    font-size: 200%;
+    color: #34495e;
+    text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+.titles {
+    font-size: 150%;
+    color: hsl(240, 100%, 10%);
+    font-family: "Lucida Console";
+    text-align: center;
+}
+.images {
+    display: block;
+    margin: 0 auto;
+}
+
+.texts {
+    font-size: 20px;
+    color: hsl(240, 100%, 10%);
+    text-align: justify;
+    font-family: Consolas;
+    line-height:1;
+    text-indent: 50px;
+}
+
+.regform {
+    font-size: 20px;
+    text-align: center;
+    font-family: Consolas;
+}
+
+
+input[type=text], input[type=password] {
+    color: #aaaaaa;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    background: lightsteelblue;
+}
+
+
+
+input:focus {
+    color: #34495e;
+}
+
+.regbtn {
+    font-family: Consolas;
+    font-size: 20px;
+    background-color: #34495e;
+    color: white;
+    padding: 16px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.list {
+    text-align: justify;
+    font-family:Consolas;
+    line-height:1;
+}
+
+ul li:first-letter {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.select_custom{
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    line-height: 30px;
+    position: relative;
+}
+
+.select_custom::-ms-expand {
+    border-radius: 10px;
+    background: #7cbc0a;
+    color: #34495e;
+    border: none;
+}
+
+form label {
+    font-family: Consolas;
+    font-size: 20px;
+    color: hsl(240, 100%, 10%);
+}
+
+label {
+    font-family: Consolas;
+    font-size: 20px;
+}

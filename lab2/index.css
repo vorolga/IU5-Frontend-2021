@@ -6,6 +6,7 @@
 * {
     background-color: var(--bg-color);
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {

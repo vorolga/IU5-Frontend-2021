@@ -8,13 +8,13 @@
  */
 
 function prettySum(arr) {
-    let sum = 0;
+    let SUM = 0;
     arr.forEach((item, index) => {
         if (index % 2 === 0) {
-            sum += item;
+            SUM += item;
         }
     });
-    return sum * arr[arr.length - 1];
+    return SUM * arr[arr.length - 1];
 }
 
 module.exports = prettySum;

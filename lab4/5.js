@@ -10,7 +10,39 @@
  */
 
 function checkBrackets(str) {
-    //code here
+    let arr = [];
+    str.split('').forEach(item => {
+        if (item === '(' || item === '[' || item === '<') {
+            arr.push(item);
+        } else {
+            if (item === ')') {
+                if (arr[arr.length - 1] === '(') {
+                    arr.pop();
+                } else {
+                    return false;
+                }
+            } else {
+                if (item === ']') {
+                    if (arr[arr.length - 1] === '[') {
+                        arr.pop();
+                    } else {
+                        return false;
+                    }
+                } else {
+                    if (item === '>') {
+                        if (arr[arr.length - 1] === '<') {
+                            arr.pop();
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    );
+
+    return arr.length === 0;
 
 }
 

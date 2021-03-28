@@ -14,7 +14,15 @@
  */
 
 function memoize(func) {
-    //code here
+    let last;
+    return (...args) => {
+        let flag = last === func(...args);
+        last = func(...args);
+        return {
+            cache: flag,
+            result: last,
+        };
+    }
 }
 
 module.exports = memoize;

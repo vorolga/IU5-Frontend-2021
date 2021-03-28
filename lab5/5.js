@@ -22,7 +22,19 @@
  */
 
 function makeRoute(arr) {
-    //code here
+    let res = [];
+    res.push(arr[0]);
+    arr.slice(1).forEach(element => {
+        if (res[res.length - 1].to === element.from) {
+            res.push(element);
+        } else {
+            if (res[0].from === element.to) {
+                res.unshift(element);
+            }
+        }
+    });
+
+    return res;
 }
 
 module.exports = makeRoute;
